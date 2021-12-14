@@ -11,6 +11,7 @@ import baseURL from '../../assets/common/baseUrl';
 import AuthGlobal from '../../Context/store/AuthGlobal';
 import { logoutUser } from '../../Context/actions/Auth.actions';
 import { useEffect } from 'react/cjs/react.development';
+import * as Google from 'expo-google-app-auth';
 
 const UserProfile = (props) => {
   const context = useContext(AuthGlobal);
